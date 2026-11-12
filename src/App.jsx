@@ -19,6 +19,8 @@ import PlantQuizPage from './pages/PlantQuizPage.jsx';
 import WateringReminderPage from './pages/WateringReminderPage.jsx';
 import UserDashboardPage from './pages/UserDashboardPage.jsx';
 import AdminDashboardPage from './pages/AdminDashboardPage.jsx';
+import AboutPage from './pages/AboutPage.jsx';
+import SupportPage from './pages/SupportPage.jsx';
 
 function MainRouter() {
   const { activePage } = useApp();
@@ -31,6 +33,10 @@ function MainRouter() {
         return <AuthPage initialMode="signup" />;
       case 'home':
         return <HomePage />;
+      case 'about':
+        return <AboutPage />;
+      case 'support':
+        return <SupportPage />;
       case 'shop':
         return <ShopPage />;
       case 'plant-details':

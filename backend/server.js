@@ -1,3 +1,4 @@
+
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import dotenv from 'dotenv';
@@ -18,14 +19,9 @@ dotenv.config({ path: path.resolve(__dirname, '../.env') });
 const app = express();
 const PORT = process.env.PORT || 5000;
 
+// Add only missing plants without deleting existing records
 const seedPlants = async () => {
   try {
-    const count = await Plant.countDocuments();
-
-    if (count > 0) {
-      return;
-    }
-
     const plants = INITIAL_PLANTS.map((plant) => ({
       externalId: plant.id,
       slug: plant.id,
@@ -54,48 +50,73 @@ const seedPlants = async () => {
       featured: plant.featured || false,
     }));
 
-    await Plant.insertMany(plants);
-    console.log(`Seeded ${plants.length} plant records into MongoDB.`);
+    const result = await Plant.bulkWrite(
+      plants.map((plant) => {
+        const { image, gallery, ...plantDetails } = plant;
+
+        return {
+          updateOne: {
+            filter: { externalId: plant.externalId },
+            update: {
+              $setOnInsert: plantDetails,
+              $set: { image, gallery },
+            },
+            upsert: true,
+          },
+        };
+      }),
+      { ordered: false }
+    );
+
+    console.log(
+      `Plant catalog sync completed. New plants added: ${result.upsertedCount || 0}`
+    );
   } catch (error) {
     console.error('Plant seeding failed:', error.message);
   }
 };
 
 const startServer = async () => {
-  await connectDB();
+  try {
+    await connectDB();
 
-  app.use(
-    cors({
-      origin: process.env.CLIENT_URL || true,
-      credentials: true,
-    })
-  );
-  app.use(express.json({ limit: '10mb' }));
+    app.use(
+      cors({
+        origin: process.env.CLIENT_URL || true,
+        credentials: true,
+      })
+    );
 
-  app.get('/api/health', (req, res) => {
-    res.status(200).json({
-      status: 'OK',
-      message: 'Leafora backend is running',
-      timestamp: new Date().toISOString(),
+    app.use(express.json({ limit: '10mb' }));
+
+    app.get('/api/health', (req, res) => {
+      res.status(200).json({
+        status: 'OK',
+        message: 'Leafora backend is running',
+        timestamp: new Date().toISOString(),
+      });
     });
-  });
 
-  app.use('/api/auth', authRoutes);
-  app.use('/api/plants', plantRoutes);
-  app.use('/api/orders', orderRoutes);
+    app.use('/api/auth', authRoutes);
+    app.use('/api/plants', plantRoutes);
+    app.use('/api/orders', orderRoutes);
 
-  app.use((error, req, res, next) => {
-    console.error('Unhandled app error:', error);
-    res.status(500).json({
-      message: error.message || 'Server error',
+    app.use((error, req, res, next) => {
+      console.error('Unhandled app error:', error);
+      res.status(500).json({
+        message: error.message || 'Server error',
+      });
     });
-  });
 
-  await seedPlants();
+    await seedPlants();
 
-  app.listen(PORT, () => {
-    console.log(`Server running on http://localhost:${PORT}`);
-  });
+    app.listen(PORT, () => {
+      console.log(`Server running on http://localhost:${PORT}`);
+    });
+  } catch (error) {
+    console.error('Server startup failed:', error.message);
+    process.exit(1);
+  }
 };
 
 startServer();

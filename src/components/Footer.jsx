@@ -8,9 +8,9 @@ export default function Footer() {
   const [subscribed, setSubscribed] = useState(false);
 
   const footerLinks = [
-    { label: 'About', action: () => navigateTo('home') },
-    { label: 'Help', action: () => navigateTo('care-guide') },
-    { label: 'Contact', action: () => navigateTo('orders') }
+    { label: 'About', action: () => navigateTo('about') },
+    { label: 'Help', action: () => navigateTo('support') },
+    { label: 'Contact', action: () => navigateTo('support') }
   ];
 
   const handleSubscribe = (e) => {

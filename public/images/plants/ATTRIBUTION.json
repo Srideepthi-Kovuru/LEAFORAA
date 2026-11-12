@@ -1,0 +1,236 @@
+[
+  {
+    "plantId": "money-plant",
+    "botanicalName": "Epipremnum aureum",
+    "commonsFile": "File:Epipremnum aureum kz01.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Epipremnum_aureum_kz01.jpg",
+    "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Kenraiz\" title=\"User:Kenraiz\">Krzysztof Ziarnek, Kenraiz</a>",
+    "license": "CC BY-SA 4.0",
+    "credit": "<span class=\"int-own-work\" lang=\"en\">Own work</span>"
+  },
+  {
+    "plantId": "peace-lily",
+    "botanicalName": "Spathiphyllum wallisii",
+    "commonsFile": "File:Spathiphyllum wallisii.003 - Aquarium Finisterrae.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Spathiphyllum_wallisii.003_-_Aquarium_Finisterrae.jpg",
+    "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Drow_male\" title=\"User:Drow male\">Fernando Losada Rodríguez</a>",
+    "license": "CC BY-SA 4.0",
+    "credit": "<span class=\"int-own-work\" lang=\"en\">Own work</span>"
+  },
+  {
+    "plantId": "zz-plant",
+    "botanicalName": "Zamioculcas zamiifolia",
+    "commonsFile": "File:Zamioculcas zamiifolia.png",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Zamioculcas_zamiifolia.png",
+    "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Mx_Lucy\" title=\"User:Mx Lucy\">Mx Lucy</a>",
+    "license": "CC BY-SA 4.0",
+    "credit": "<span class=\"int-own-work\" lang=\"en\">Own work</span>"
+  },
+  {
+    "plantId": "rubber-plant",
+    "botanicalName": "Ficus elastica",
+    "commonsFile": "File:Ficus elastica 2.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ficus_elastica_2.jpg",
+    "artist": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Nativeplants_garden&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Nativeplants garden (page does not exist)\">Nativeplants garden</a>",
+    "license": "CC BY-SA 4.0",
+    "credit": "<span class=\"int-own-work\" lang=\"en\">Own work</span>"
+  },
+  {
+    "plantId": "areca-palm",
+    "botanicalName": "Dypsis lutescens",
+    "commonsFile": "File:Dypsis lutescens1.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dypsis_lutescens1.jpg",
+    "artist": "KENPEI",
+    "license": "CC BY-SA 3.0",
+    "credit": "KENPEI's photo"
+  },
+  {
+    "plantId": "aloe-vera",
+    "botanicalName": "Aloe vera",
+    "commonsFile": "File:Aloe vera Lanzarote.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aloe_vera_Lanzarote.jpg",
+    "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Llez\" title=\"User:Llez\">H. Zell</a>",
+    "license": "CC BY-SA 3.0",
+    "credit": "<span class=\"int-own-work\" lang=\"en\">Own work</span>"
+  },
+  {
+    "plantId": "jade-plant",
+    "botanicalName": "Crassula ovata",
+    "commonsFile": "File:Crassula ovata 2012.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Crassula_ovata_2012.jpg",
+    "artist": "<p><a href=\"//commons.wikimedia.org/wiki/User:JLPC\" title=\"User:JLPC\">JLPC</a>\n</p>",
+    "license": "CC BY-SA 3.0",
+    "credit": "<span class=\"int-own-work\" lang=\"en\">Own work</span>"
+  },
+  {
+    "plantId": "echeveria",
+    "botanicalName": "Echeveria",
+    "commonsFile": "File:Echeveria afinnis.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Echeveria_afinnis.jpg",
+    "artist": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Ignag94&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Ignag94 (page does not exist)\">Ignag94</a>",
+    "license": "CC BY-SA 4.0",
+    "credit": "<span class=\"int-own-work\" lang=\"en\">Own work</span>"
+  },
+  {
+    "plantId": "hibiscus",
+    "botanicalName": "Hibiscus rosa-sinensis",
+    "commonsFile": "File:Hibiscus rosa-sinensis 22.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hibiscus_rosa-sinensis_22.jpg",
+    "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Vengolis\" title=\"User:Vengolis\">Vengolis</a>",
+    "license": "CC BY-SA 3.0",
+    "credit": "<span class=\"int-own-work\" lang=\"en\">Own work</span>"
+  },
+  {
+    "plantId": "jasmine",
+    "botanicalName": "Jasminum sambac",
+    "commonsFile": "File:Jasminum sambac kz01.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jasminum_sambac_kz01.jpg",
+    "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Kenraiz\" title=\"User:Kenraiz\">Krzysztof Ziarnek, Kenraiz</a>",
+    "license": "CC BY-SA 4.0",
+    "credit": "<span class=\"int-own-work\" lang=\"en\">Own work</span>"
+  },
+  {
+    "plantId": "lemon",
+    "botanicalName": "Citrus limon",
+    "commonsFile": "File:Unripe fruits of Citrus limon.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Unripe_fruits_of_Citrus_limon.jpg",
+    "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Commonists\" title=\"User:Commonists\">Commonists</a>",
+    "license": "CC BY-SA 4.0",
+    "credit": "<span class=\"int-own-work\" lang=\"en\">Own work</span>"
+  },
+  {
+    "plantId": "guava",
+    "botanicalName": "Psidium guajava",
+    "commonsFile": "File:Psidium guajava 07496.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Psidium_guajava_07496.jpg",
+    "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Vengolis\" title=\"User:Vengolis\">Vengolis</a>",
+    "license": "CC BY-SA 4.0",
+    "credit": "<span class=\"int-own-work\" lang=\"en\">Own work</span>"
+  },
+  {
+    "plantId": "chilli",
+    "botanicalName": "Capsicum annuum",
+    "commonsFile": "File:Capsicum annuum.JPG",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Capsicum_annuum.JPG",
+    "artist": "Eric Hunt",
+    "license": "CC BY-SA 3.0",
+    "credit": "<span class=\"int-own-work\" lang=\"en\">Own work</span>"
+  },
+  {
+    "plantId": "tomato",
+    "botanicalName": "Solanum lycopersicum",
+    "commonsFile": "File:Starr 080501-4344 Solanum lycopersicum var. lycopersicum.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Starr_080501-4344_Solanum_lycopersicum_var._lycopersicum.jpg",
+    "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"http://www.hear.org/starr/\">Forest &amp; Kim Starr</a>",
+    "license": "CC BY 3.0",
+    "credit": "Plants of Hawaii, <a rel=\"nofollow\" class=\"external text\" href=\"http://www.starrenvironmental.com/images/full/starr-080501-4344.jpg\">Image 080501-4344</a> from <a rel=\"nofollow\" class=\"external free\" href=\"http://www.hear.org/starr/plants/images/image/?q=080501-4344\">http://www.hear.org/starr/plants/images/image/?q=080501-4344</a>"
+  },
+  {
+    "plantId": "mint",
+    "botanicalName": "Mentha",
+    "commonsFile": "File:Mentha-IMG 5257.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mentha-IMG_5257.jpg",
+    "artist": "<a href=\"//commons.wikimedia.org/wiki/User:K%C4%B1z%C4%B1l\" title=\"User:Kızıl\">Kızıl</a>",
+    "license": "CC BY-SA 4.0",
+    "credit": "<span class=\"int-own-work\" lang=\"en\">Own work</span>"
+  },
+  {
+    "plantId": "boston-fern",
+    "botanicalName": "Nephrolepis exaltata",
+    "commonsFile": "File:Nephrolepis exaltata 6zz.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nephrolepis_exaltata_6zz.jpg",
+    "artist": "Photo by David J. Stang",
+    "license": "CC BY-SA 4.0",
+    "credit": "source: David Stang.  First published at ZipcodeZoo.com"
+  },
+  {
+    "plantId": "spider-plant",
+    "botanicalName": "Chlorophytum comosum",
+    "commonsFile": "File:Chlorophytum comosum flos.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chlorophytum_comosum_flos.jpg",
+    "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Gower\" title=\"User:Gower\">Adrian Tync</a>",
+    "license": "CC BY 4.0",
+    "credit": "<span class=\"int-own-work\" lang=\"en\">Own work</span>"
+  },
+  {
+    "plantId": "pothos-marble-queen",
+    "botanicalName": "Epipremnum aureum Marble Queen",
+    "commonsFile": "File:Efeutute18.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Efeutute18.jpg",
+    "artist": "<a href=\"//commons.wikimedia.org/wiki/User:LucaLuca\" title=\"User:LucaLuca\">LucaLuca</a>",
+    "license": "CC BY-SA 3.0",
+    "credit": "<span class=\"int-own-work\" lang=\"en\">Own work</span>"
+  },
+  {
+    "plantId": "philodendron-heartleaf",
+    "botanicalName": "Philodendron hederaceum",
+    "commonsFile": "File:Philodendron hederaceum kz01.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Philodendron_hederaceum_kz01.jpg",
+    "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Kenraiz\" title=\"User:Kenraiz\">Krzysztof Ziarnek, Kenraiz</a>",
+    "license": "CC BY-SA 4.0",
+    "credit": "<span class=\"int-own-work\" lang=\"en\">Own work</span>"
+  },
+  {
+    "plantId": "rose",
+    "botanicalName": "Rosa hybrid garden rose flower",
+    "commonsFile": "File:Rosa Maxim.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rosa_Maxim.jpg",
+    "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Laitche\" title=\"User:Laitche\">Laitche</a>",
+    "license": "CC BY 3.0",
+    "credit": "<span class=\"int-own-work\" lang=\"en\">Own work</span>"
+  },
+  {
+    "plantId": "bougainvillea",
+    "botanicalName": "Bougainvillea glabra flower",
+    "commonsFile": "File:Bougainvillea glabra flower 01.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bougainvillea_glabra_flower_01.jpg",
+    "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Jagseer_S_Sidhu\" title=\"User:Jagseer S Sidhu\">Jagseer S Sidhu</a>",
+    "license": "CC BY-SA 4.0",
+    "credit": "<span class=\"int-own-work\" lang=\"en\">Own work</span>"
+  },
+  {
+    "plantId": "neem",
+    "botanicalName": "Azadirachta indica neem tree",
+    "commonsFile": "File:Qutb Minar with Neem Tree.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Qutb_Minar_with_Neem_Tree.jpg",
+    "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Shikhers\" title=\"User:Shikhers\">Shikhers</a>",
+    "license": "CC BY-SA 4.0",
+    "credit": "<span class=\"int-own-work\" lang=\"en\">Own work</span>"
+  },
+  {
+    "plantId": "tulsi",
+    "botanicalName": "Ocimum tenuiflorum holy basil",
+    "commonsFile": "File:Thulasi2.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Thulasi2.jpg",
+    "artist": "<a href=\"https://en.wikipedia.org/wiki/ml:User:Challiyan\" class=\"extiw\" title=\"w:ml:User:Challiyan\">Challiyan</a> at <a href=\"https://en.wikipedia.org/wiki/ml:\" class=\"extiw\" title=\"w:ml:\">Malayalam Wikipedia</a>",
+    "license": "CC BY-SA 2.5",
+    "credit": "<bdi lang=\"en\" dir=\"ltr\">Transferred from <span class=\"plainlinks\"><a class=\"external text\" data-mw-original-href=\"//ml.wikipedia.org\" href=\"https://ml.wikipedia.org\">ml.wikipedia</a></span> to Commons by <a href=\"//commons.wikimedia.org/wiki/User:Sreejithk2000\" title=\"User:Sreejithk2000\">Sreejithk2000</a> using <a href=\"https://iw.toolforge.org/commonshelper/\" class=\"extiw\" title=\"toollabs:commonshelper/\">CommonsHelper</a>.</bdi>"
+  },
+  {
+    "plantId": "lavender",
+    "botanicalName": "Lavandula angustifolia purple flowers",
+    "commonsFile": "File:Lavender flowers in Tihany, Hungary.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lavender_flowers_in_Tihany,_Hungary.jpg",
+    "artist": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:DavidivardiIL&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:DavidivardiIL (page does not exist)\">DavidivardiIL</a>",
+    "license": "CC BY-SA 4.0",
+    "credit": "<span class=\"int-own-work\" lang=\"en\">Own work</span>"
+  },
+  {
+    "plantId": "chrysanthemum",
+    "botanicalName": "Chrysanthemum morifolium flower",
+    "commonsFile": "File:Chrysanthemum morifolium Flower.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chrysanthemum_morifolium_Flower.jpg",
+    "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Dolon_Prova\" title=\"User:Dolon Prova\">Dolon Prova</a>",
+    "license": "CC BY-SA 4.0",
+    "credit": "<span class=\"int-own-work\" lang=\"en\">Own work</span>"
+  },
+  {
+    "plantId": "marigold",
+    "botanicalName": "Tagetes erecta orange flower",
+    "commonsFile": "File:Tagetes-Sitia-Crete.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tagetes-Sitia-Crete.jpg",
+    "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Petro_Stelte\" title=\"User:Petro Stelte\">Petro Stelte</a>",
+    "license": "CC BY-SA 4.0",
+    "credit": "<span class=\"int-own-work\" lang=\"en\">Own work</span>"
+  }
+]
