@@ -1,0 +1,6 @@
+{
+  "name": "LEAFORA - Online Nursery & Plant Shop",
+  "description": "Premium botanical shopping with plant categories, smart watering reminders, plant care guides, quiz finder, order tracking, and admin dashboard.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
