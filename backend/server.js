@@ -76,47 +76,44 @@ const seedPlants = async () => {
   }
 };
 
-const startServer = async () => {
-  try {
-    await connectDB();
+const startServer = () => {
+  app.use(
+    cors({
+      origin: process.env.CLIENT_URL || true,
+      credentials: true,
+    })
+  );
 
-    app.use(
-      cors({
-        origin: process.env.CLIENT_URL || true,
-        credentials: true,
-      })
-    );
+  app.use(express.json({ limit: '10mb' }));
 
-    app.use(express.json({ limit: '10mb' }));
+  app.get('/api/health', (req, res) => {
+    res.status(200).json({
+      status: 'OK',
+      message: 'Leafora backend is running',
+      timestamp: new Date().toISOString(),
+    });
+  });
 
-    app.get('/api/health', (req, res) => {
-      res.status(200).json({
-        status: 'OK',
-        message: 'Leafora backend is running',
-        timestamp: new Date().toISOString(),
+  app.use('/api/auth', authRoutes);
+  app.use('/api/plants', plantRoutes);
+  app.use('/api/orders', orderRoutes);
+
+  app.use((error, req, res, next) => {
+    console.error('Unhandled app error:', error);
+    res.status(500).json({
+      message: error.message || 'Server error',
+    });
+  });
+
+  app.listen(PORT, '0.0.0.0', () => {
+    console.log(`Server running on port ${PORT}`);
+
+    connectDB()
+      .then(() => seedPlants())
+      .catch(error => {
+        console.error('Database startup failed:', error.message);
       });
-    });
-
-    app.use('/api/auth', authRoutes);
-    app.use('/api/plants', plantRoutes);
-    app.use('/api/orders', orderRoutes);
-
-    app.use((error, req, res, next) => {
-      console.error('Unhandled app error:', error);
-      res.status(500).json({
-        message: error.message || 'Server error',
-      });
-    });
-
-    await seedPlants();
-
-    app.listen(PORT, "0.0.0.0", () => {
-      console.log(`Server running on http://localhost:${PORT}`);
-    });
-  } catch (error) {
-    console.error('Server startup failed:', error.message);
-    process.exit(1);
-  }
+  });
 };
 
 startServer();
