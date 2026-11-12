@@ -2,6 +2,8 @@ import React, { createContext, useContext, useState, useEffect } from 'react';
 import { INITIAL_PLANTS, POT_OPTIONS } from '../data/plantsData.js';
 import { buildOrderPayload } from '../utils/orderPayload.js';
 
+const API_BASE_URL = import.meta.env.VITE_API_URL || '';
+
 const AppContext = createContext();
 
 const normalizePlant = (plant = {}) => {
@@ -40,7 +42,7 @@ const normalizeOrder = (order = {}) => ({
 const fetchJson = async (endpoint, options = {}) => {
   const token = localStorage.getItem('leafora_token');
 
-  const response = await fetch(endpoint, {
+  const response = await fetch(`${API_BASE_URL}${endpoint}`, {
     ...options,
     headers: {
       'Content-Type': 'application/json',
@@ -81,7 +83,7 @@ export function AppProvider({ children }) {
   useEffect(() => {
     const syncPlants = async () => {
       try {
-        const response = await fetch('/api/plants');
+        const response = await fetch(`${API_BASE_URL}/api/plants`);
         if (!response.ok) throw new Error('API unavailable');
 
         const data = await response.json();
@@ -140,7 +142,7 @@ export function AppProvider({ children }) {
       if (!token) return;
 
       try {
-        const response = await fetch('/api/auth/me', {
+        const response = await fetch(`${API_BASE_URL}/api/auth/me`, {
           headers: { Authorization: `Bearer ${token}` },
         });
 
